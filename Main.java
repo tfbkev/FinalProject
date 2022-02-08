@@ -6,6 +6,8 @@ public class Main {
             System.out.println("Please enter Search");
             String answerGave = scnr.next();
             String matchedAnswer = toSearch(answerGave);
+//The method toSearch(String) is undefined for the type MainJava(67108964)
+//Ive left all methods public not sure why the system is not reading the method             
         } catch (IllegalArgumentException AIE) {
             System.out.println(AIE);
             System.out.println("Failed");
