@@ -1,61 +1,61 @@
 // import java.util.Scanner;
 
 public class BMWInventory {
-    private static String make;
-    private static String model;
-    private static String color;
-    private static int year;
-    private static int mileage;
+    private String make="";
+    private String model="";
+    private String color="";
+    private int year=0;
+    private int mileage=0;
 
     public BMWInventory(String make, String model, String color, int year, int mileage) {
-        BMWInventory.make = make;
-        BMWInventory.model = model;
-        BMWInventory.color = color;
-        BMWInventory.year = year;
-        BMWInventory.mileage = mileage;
+        this.make = make="";
+        this.model = model="";
+        this.color = color="";
+        this.year = year=0;
+        this.mileage = mileage=0;
     }
 
     public String getCarMake() {
         return make;
     }
 
-    public static void setCarMake(String string) {
-        BMWInventory.make = string;
+    public void setCarMake(String string) {
+        this.make = string;
     }
 
     public String getCarModel() {
         return model;
     }
 
-    public static void setCarModel(String string) {
-        BMWInventory.model = string;
+    public void setCarModel(String string) {
+        this.model = string;
     }
 
     public String getCarColor() {
         return color;
     }
 
-    public static void setCarColor(String string) {
-        BMWInventory.color = string;
+    public void setCarColor(String string) {
+        this.color = string;
     }
 
     public int getCarYear() {
         return year;
     }
 
-    public static void setCarYear(int year) {
-        BMWInventory.year = year;
+    public void setCarYear(int year) {
+        this.year = year;
     }
 
     public int getCarMileage() {
         return mileage;
     }
 
-    public static void setCarMileage(int mileage) {
-        BMWInventory.mileage = mileage;
+    public void setCarMileage(int mileage) {
+        this.mileage = mileage;
     }
 
-    public static String toSearch(String theAnswerEnter) throws IllegalArgumentException {
+    public String toSearch(String theAnswerEnter) throws IllegalArgumentException {
         final String enterSearch = "Search";
         if (theAnswerEnter.equals(enterSearch)) {
             return"Car make: " + make + " Car model: " + model + " Car color: " + color + " Car year: " + year
