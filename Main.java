@@ -5,9 +5,7 @@ public class Main {
         try (Scanner scnr = new Scanner(System.in)) {
             System.out.println("Please enter Search");
             String answerGave = scnr.next();
-            String matchedAnswer = toSearch(answerGave);
-//The method toSearch(String) is undefined for the type MainJava(67108964)
-//Ive left all methods public not sure why the system is not reading the method             
+            Boolean matchedAnswer = toSearch(answerGave);
         } catch (IllegalArgumentException AIE) {
             System.out.println(AIE);
             System.out.println("Failed");
@@ -15,12 +13,17 @@ public class Main {
         BMWInventory car1 = new BMWInventory("BMW", "X1", "RED", 2020, 1500);
 
         try {
-            System.out.println(car1);
+            if(matchedAnswer){ System.out.println(car1);}
+//            matchedAnswer cannot be resolved to a variableJava(33554515)
         } catch (IllegalArgumentException AIE) {
             System.out.println(AIE);
             System.out.println("Failed");
         }
 
+    }
+
+    private static Boolean toSearch(String answerGave) throws IllegalArgumentException {
+        return true;
     }
    
 
