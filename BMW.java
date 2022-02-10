@@ -22,7 +22,8 @@ public class BMW {
         int year = scnr.nextInt();
         System.out.println("Enter Vehicle Mileage: ");
         int mileage = scnr.nextInt();
-    
+//     Having a hardtime understanding how to get this to run in the main
+//     I want to be able to type in "add car" into a scanner which would have this method run                                
         Automobile newAuto = new Automobile(make, model, color, year, mileage);
         vehicleList.add(newAuto);
 
