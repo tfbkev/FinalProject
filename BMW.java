@@ -18,7 +18,7 @@ public class BMW {
        vehicleList.add(e)
        
        
-       
+//        The method add(Automobile) in the type ArrayList<Automobile> is not applicable for the arguments ()Java(67108979)
        
         // Scanner scnr = new Scanner(System.in);
         // System.out.println();
