@@ -1,32 +1,23 @@
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Main {
+
     public static void main(String[] args) {
-        try (Scanner scnr = new Scanner(System.in)) {
-            System.out.println("Please enter Search");
-            String answerGave = scnr.next();
-            Boolean matchedAnswer = toSearch(answerGave);
-        } catch (IllegalArgumentException AIE) {
-            System.out.println(AIE);
-            System.out.println("Failed");
-        }
-        BMWInventory car1 = new BMWInventory("BMW", "X1", "RED", 2020, 1500);
 
-        try {
-            if(matchedAnswer){ System.out.println(car1);}
-//            matchedAnswer cannot be resolved to a variableJava(33554515)
-        } catch (IllegalArgumentException AIE) {
-            System.out.println(AIE);
-            System.out.println("Failed");
-        }
+        Scanner scnr = new Scanner(System.in);
+        // Create object using automobile construcot
+        // Automobile car1 = new Automobile("BMW", "X1", "RED", 2021, 1400);
+        // final ArrayList<Automobile> carList = new ArrayList<>();
+        // carList.add(car1);
 
+        // for (Automobile car : carList) {
+        //     System.out.println(car);
+        // }
+        // for (int i = 0; i < (carList).size(); i++) {
+        // }
     }
 
-    private static Boolean toSearch(String answerGave) throws IllegalArgumentException {
-        return true;
-    }
    
-
-    
 
 }
